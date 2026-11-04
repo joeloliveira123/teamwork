@@ -16,11 +16,13 @@ py -m pip install -r runtime/requirements.txt
 Copy-Item runtime/.env.example runtime/.env
 ```
 
-Edite `runtime/.env` e informe:
-- `LLM_BASE_URL`: endereço-base da API, normalmente incluindo o prefixo de versão como `/v1`.
-- `LLM_API_KEY`: chave privada do provedor.
-- `LLM_MODEL`: identificador exato do modelo disponibilizado pelo provedor.
-- `TEAMWORK_API_TOKEN`: opcional, mas recomendado; defina um token longo para proteger os endpoints locais.
+Edite `runtime/.env` e configure o OpenRouter:
+- `LLM_BASE_URL=https://openrouter.ai/api/v1`
+- `LLM_API_KEY`: sua chave privada criada no painel do OpenRouter.
+- `LLM_MODEL=openrouter/free`: roteador que seleciona modelos gratuitos compatíveis.
+- `TEAMWORK_API_TOKEN`: obrigatório para proteger os endpoints locais. Gere um token forte no PowerShell com `py -c "import secrets; print(secrets.token_urlsafe(32))"` e cole o resultado apenas no arquivo local.
+
+Não compartilhe a chave OpenRouter nem o token do Teamwork. O runtime envia os cabeçalhos de identificação do aplicativo e mantém as credenciais fora do código.
 
 Não envie a chave ou o conteúdo do arquivo .env nesta conversa ou ao GitHub.
 
@@ -43,7 +45,7 @@ Consulte `GET /health`, depois `GET /agents`. Envie uma tarefa para um agente ha
 }
 ```
 
-Se `TEAMWORK_API_TOKEN` estiver configurado, envie o cabeçalho `X-Teamwork-Token` em todas as chamadas protegidas. Consulte o resultado com `GET /tasks/{task_id}`.
+Envie o cabeçalho `X-Teamwork-Token` em todas as chamadas protegidas. O endpoint `/health` não exige token; os demais endpoints protegidos retornam erro até que `TEAMWORK_API_TOKEN` esteja configurado. Consulte o resultado com `GET /tasks/{task_id}`.
 
 ## Limitações desta primeira versão
 Esta versão oferece identidades isoladas, carregamento de Skills, inferência por API, fila simples em background e memória episódica privada por agente. Ainda não implementa delegação automática entre agentes, memória semântica compartilhada, ferramentas reais, aprovação interativa, autenticação de usuários, painel web, limites financeiros por tarefa ou execução de ações externas. Não classifique o Teamwork como plenamente autônomo até que essas camadas sejam implementadas e testadas.
