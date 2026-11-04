@@ -70,7 +70,9 @@ def load_agents() -> list[dict[str, Any]]:
 
 def require_local_token(x_teamwork_token: str | None = Header(default=None)) -> None:
     expected = os.getenv("TEAMWORK_API_TOKEN", "").strip()
-    if expected and x_teamwork_token != expected:
+    if not expected:
+        raise HTTPException(status_code=503, detail="Configure TEAMWORK_API_TOKEN in runtime/.env before using protected endpoints")
+    if x_teamwork_token != expected:
         raise HTTPException(status_code=401, detail="Invalid or missing Teamwork API token")
 
 
@@ -86,7 +88,12 @@ async def call_model(system_prompt: str, user_prompt: str) -> str:
     if not base_url or not api_key or not model:
         raise RuntimeError("Configure LLM_BASE_URL, LLM_API_KEY and LLM_MODEL in runtime/.env")
     url = base_url if base_url.endswith("/chat/completions") else base_url + "/chat/completions"
-    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "http://localhost:8000",
+        "X-Title": "Teamwork Agent Runtime",
+    }
     payload = {
         "model": model,
         "messages": [
