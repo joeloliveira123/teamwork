@@ -17,6 +17,23 @@ Este diretório é a entrada principal para a estrutura organizacional do Teamwo
 | 09 | Dados e Inteligência Analítica | DATA | `09-dados-analytics/` |
 | 10 | Segurança e Compliance | SEC | `10-seguranca-compliance/` |
 
+## Estado da organização
+
+| Diretoria | Código | Estrutura principal |
+|---|---|---|
+| Inovação e Growth | INNO | Organizada; arquivos verificados na etapa anterior |
+| IA e Tecnologia | AI-TECH | Estrutura criada; conferência final pendente |
+| Operações | OPS | Estrutura criada; conferência final pendente |
+| Financeiro | FIN | Estrutura criada; conferência final pendente |
+| Projetos e Portfólio | PMO | Estrutura criada; conferência final pendente |
+| Marketing e Vendas | MKT | Estrutura criada; conferência final pendente |
+| Produto e Design | PROD | Estrutura criada; conferência final pendente |
+| Pesquisa e Inteligência de Mercado | MI | Estrutura criada; conferência final pendente |
+| Dados e Inteligência Analítica | DATA | Estrutura criada; conferência final pendente |
+| Segurança e Compliance | SEC | Estrutura criada; conferência final pendente |
+
+O registro central em `runtime/agent-registry.yaml` aponta para as Skills canônicas em `diretorias/`. As Skills antigas permanecem preservadas durante a transição; não foram removidas.
+
 ## Padrão de conteúdo por diretoria
 
 ```text
