@@ -24,4 +24,4 @@ O CEO humano é a autoridade máxima. O padrão é autonomia com aprovação. Pe
 Constituição e autoridade aprovadas pelo CEO → governanca/ → protocolos/ → Skills em diretorias/ → instruções específicas da tarefa. Em conflito, interrompa a ação afetada e escale; não escolha silenciosamente a regra mais permissiva.
 
 ## Organização
-Diretorias/ é a fonte canônica das Skills. Documentos corporativos transversais ficam em governanca/, protocolos/, projetos/, modelos/ e testes/. Pastas antigas governance/ e protocols/ são preservadas durante a transição; consulte os documentos canônicos em português.
+Diretorias/ é a fonte canônica das Skills. Documentos corporativos transversais ficam em governanca/, protocolos/, projetos/, modelos/ e tests/. Pastas antigas governance/ e protocols/ são preservadas durante a transição; consulte os documentos canônicos em português.
