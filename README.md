@@ -1,80 +1,55 @@
 # Teamwork
 
-O Teamwork é uma organização digital estruturada por diretorias, com responsabilidades especializadas, Skills reutilizáveis, governança humana e projetos rastreáveis.
+O Teamwork é uma organização digital estruturada por dez diretorias, com responsabilidades especializadas, Skills reutilizáveis, governança humana e projetos rastreáveis.
 
-## Como o repositório está organizado
-
-A estrutura principal é dividida por **diretorias**. Cada diretoria terá seu próprio espaço, reunindo a visão geral da área, a função do diretor, os três ATEIs e suas respectivas Skills.
+## Estrutura do repositório
 
 ```text
 teamwork/
-├── diretorias/
-│   ├── 01-inovacao-growth/
-│   ├── 02-ia-tecnologia/
-│   ├── 03-operacoes/
-│   ├── 04-financeiro/
-│   ├── 05-projetos-pmo/
-│   ├── 06-marketing-vendas/
-│   ├── 07-produto-design/
-│   ├── 08-inteligencia-mercado/
-│   ├── 09-dados-analytics/
-│   └── 10-seguranca-compliance/
-├── governanca/
-├── protocolos/
-├── projetos/
-├── modelos/
-├── testes/
+├── diretorias/       # 10 diretorias, diretores e 30 ATEIs
+├── governanca/       # modelo operacional, autoridade e aprovações
+├── protocolos/       # demandas, delegação, comunicação e mudanças
+├── projetos/         # portfólio e registros de projetos
+├── modelos/          # intake, tarefas, aprovações e relatórios
+├── testes/           # testes de aceitação e qualidade
+├── runtime/          # arquitetura futura; não ativada nesta fase
 ├── AGENTS.md
 └── README.md
 ```
 
-> A árvore acima representa a estrutura-alvo. As diretorias serão organizadas e migradas gradualmente. Não considere uma pasta concluída até que seus arquivos tenham sido efetivamente criados e verificados.
-
 ## As dez diretorias
+| Ordem | Diretoria | Código |
+|---:|---|---|
+| 01 | Inovação e Growth | INNO |
+| 02 | IA e Tecnologia | AI-TECH |
+| 03 | Operações | OPS |
+| 04 | Financeiro | FIN |
+| 05 | Projetos e Portfólio (PMO) | PMO |
+| 06 | Marketing e Vendas | MKT |
+| 07 | Produto e Design | PROD |
+| 08 | Pesquisa e Inteligência de Mercado | MI |
+| 09 | Dados e Inteligência Analítica | DATA |
+| 10 | Segurança e Compliance | SEC |
 
-| Ordem | Diretoria | Código | Responsabilidade principal |
-|---:|---|---|---|
-| 01 | Inovação e Growth | INNO | Inovação, experimentação e crescimento |
-| 02 | IA e Tecnologia | AI-TECH | Engenharia, IA, sistemas e infraestrutura |
-| 03 | Operações | OPS | Processos, serviços, qualidade e continuidade |
-| 04 | Financeiro | FIN | Planejamento, tesouraria e análise financeira |
-| 05 | Projetos e Portfólio (PMO) | PMO | Planejamento, coordenação e controle de projetos |
-| 06 | Marketing e Vendas | MKT | Marca, marketing, vendas e relacionamento |
-| 07 | Produto e Design | PROD | Estratégia de produto, UX e design |
-| 08 | Pesquisa e Inteligência de Mercado | MI | Mercado, concorrência e voz do cliente |
-| 09 | Dados e Inteligência Analítica | DATA | Engenharia de dados, BI e ciência de dados |
-| 10 | Segurança e Compliance | SEC | Segurança, privacidade, riscos e conformidade |
-
-## Padrão interno de cada diretoria
-
-Cada pasta de diretoria deverá conter:
-- `README.md`: missão, escopo, responsabilidades, indicadores e interfaces.
-- `diretor/`: identidade funcional, atribuições e Skill do diretor.
-- `ateis/ATEI-001/`, `ATEI-002/`, `ATEI-003/`: perfil, responsabilidades, entregáveis e Skill de cada especialista.
-- `processos/`: procedimentos próprios da diretoria, quando necessários.
-- `documentos/`: políticas, referências e artefatos específicos da área, quando necessários.
-
-## Governança e funcionamento
+## Sistema Operacional
+O fluxo padrão é: INTAKE → TRIAGEM → DESCOBERTA → PLANEJAMENTO → APROVAÇÃO (quando necessária) → EXECUÇÃO → VALIDAÇÃO → ACEITE → ENCERRAMENTO.
 
 - O CEO humano é a autoridade máxima.
-- O padrão de autonomia é **autonomia com aprovação**.
-- Cada diretoria responde por sua especialidade e colabora com as demais.
-- O PMO integra o portfólio e acompanha projetos, sem substituir os responsáveis técnicos.
-- Ações financeiras, legais, externas, irreversíveis ou em produção exigem aprovação explícita.
-- Nenhuma entrega é considerada concluída sem evidência verificável.
+- Cada diretor funcional responde pela sua especialidade.
+- Os ATEIs produzem entregáveis especializados.
+- O PMO coordena projetos e dependências, sem substituir os responsáveis técnicos.
+- Segurança e Compliance avalia riscos e controles.
+- Gastos, contratos, ações externas, produção, exclusões irreversíveis e mudanças materiais exigem aprovação humana explícita.
+- Nenhuma entrega é concluída sem evidência e aceite aplicável.
 
-## Skills agora; agentes no futuro
+## Documentos principais
+- [Índice das diretorias](diretorias/README.md)
+- [Governança](governanca/README.md)
+- [Protocolos](protocolos/README.md)
+- [Modelos de trabalho](modelos/README.md)
+- [Portfólio de projetos](projetos/README.md)
 
-Nesta fase, o Teamwork é uma estrutura documental e operacional baseada em Skills. As Skills definem como cada função deve trabalhar, mas não são agentes autônomos nem ficam executando tarefas em segundo plano.
+## Fase atual: Skills-first
+Nesta fase, o Teamwork é uma estrutura documental e operacional baseada em Skills. As Skills definem como cada função trabalha; não são agentes autônomos e não ficam executando tarefas em segundo plano. APIs, memória técnica e execução autônoma poderão ser avaliadas futuramente, após maturidade dos processos.
 
-APIs, modelos, memória técnica, ferramentas e execução autônoma poderão ser adicionados futuramente, sem alterar a organização fundamental por diretorias.
-
-## Fases de trabalho
-
-1. **PROJETAR:** compreender o objetivo, pesquisar e planejar.
-2. **EXECUTAR:** produzir entregáveis dentro do escopo autorizado.
-3. **GERENCIAR:** validar, acompanhar, controlar mudanças e registrar aprendizados.
-
-## Estado da reorganização
-
-A reorganização está sendo feita gradualmente, diretoria por diretoria. A estrutura-alvo e a ordem oficial estão definidas neste documento; cada diretoria será marcada como organizada somente após a migração e verificação de seus arquivos.
+O runtime é documentação/estrutura futura e não deve ser tratado como sistema operacional ativo.
