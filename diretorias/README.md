@@ -22,15 +22,15 @@ Este diretório é a entrada principal para a estrutura organizacional do Teamwo
 | Diretoria | Código | Estrutura principal |
 |---|---|---|
 | Inovação e Growth | INNO | Organizada; arquivos verificados na etapa anterior |
-| IA e Tecnologia | AI-TECH | Estrutura criada; conferência final pendente |
-| Operações | OPS | Estrutura criada; conferência final pendente |
-| Financeiro | FIN | Estrutura criada; conferência final pendente |
-| Projetos e Portfólio | PMO | Estrutura criada; conferência final pendente |
-| Marketing e Vendas | MKT | Estrutura criada; conferência final pendente |
-| Produto e Design | PROD | Estrutura criada; conferência final pendente |
-| Pesquisa e Inteligência de Mercado | MI | Estrutura criada; conferência final pendente |
-| Dados e Inteligência Analítica | DATA | Estrutura criada; conferência final pendente |
-| Segurança e Compliance | SEC | Estrutura criada; conferência final pendente |
+| IA e Tecnologia | AI-TECH | Organizada e conferida |
+| Operações | OPS | Organizada e conferida |
+| Financeiro | FIN | Organizada e conferida |
+| Projetos e Portfólio | PMO | Organizada e conferida |
+| Marketing e Vendas | MKT | Organizada e conferida |
+| Produto e Design | PROD | Organizada e conferida |
+| Pesquisa e Inteligência de Mercado | MI | Organizada e conferida |
+| Dados e Inteligência Analítica | DATA | Organizada e conferida |
+| Segurança e Compliance | SEC | Organizada e conferida |
 
 O registro central em `runtime/agent-registry.yaml` aponta para as Skills canônicas em `diretorias/`. As Skills antigas permanecem preservadas durante a transição; não foram removidas.
 
