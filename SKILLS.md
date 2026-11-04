@@ -4,14 +4,45 @@
 
 ## Índice
 
-1. [01-inovacao-growth — Diretor](#skill-1)
-2. [01-inovacao-growth — ATEI-001](#skill-2)
-3. [01-inovacao-growth — ATEI-002](#skill-3)
-4. [01-inovacao-growth — ATEI-003](#skill-4)
-5. [02-ia-tecnologia — Diretor](#skill-5)
-6. [02-ia-tecnologia — ATEI-001](#skill-6)
-7. [02-ia-tecnologia — ATEI-002](#skill-7)
-8. [02-ia-tecnologia — ATEI-003](#skill-8)
+### Inovação e Growth
+
+- INNO-DIR-001 · INNO-ATEI-001 · INNO-ATEI-002 · INNO-ATEI-003
+
+### IA e Tecnologia
+
+- AI-TECH-DIR-001 · AI-TECH-ATEI-001 · AI-TECH-ATEI-002 · AI-TECH-ATEI-003
+
+### Operações
+
+- OPS-DIR-001 · OPS-ATEI-001 · OPS-ATEI-002 · OPS-ATEI-003
+
+### Financeiro
+
+- FIN-DIR-001 · FIN-ATEI-001 · FIN-ATEI-002 · FIN-ATEI-003
+
+### Projetos e Portfólio (PMO)
+
+- PMO-DIR-001 · PMO-ATEI-001 · PMO-ATEI-002 · PMO-ATEI-003
+
+### Marketing e Vendas
+
+- MKT-DIR-001 · MKT-ATEI-001 · MKT-ATEI-002 · MKT-ATEI-003
+
+### Produto e Design
+
+- PROD-DIR-001 · PROD-ATEI-001 · PROD-ATEI-002 · PROD-ATEI-003
+
+### Pesquisa e Inteligência de Mercado
+
+- MI-DIR-001 · MI-ATEI-001 · MI-ATEI-002 · MI-ATEI-003
+
+### Dados e Inteligência Analítica
+
+- DATA-DIR-001 · DATA-ATEI-001 · DATA-ATEI-002 · DATA-ATEI-003
+
+### Segurança e Compliance
+
+- SEC-DIR-001 · SEC-ATEI-001 · SEC-ATEI-002 · SEC-ATEI-003
 
 <a id="skill-1"></a>
 
