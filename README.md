@@ -11,7 +11,7 @@ teamwork/
 ├── protocolos/       # demandas, delegação, comunicação e mudanças
 ├── projetos/         # portfólio e registros de projetos
 ├── modelos/          # intake, tarefas, aprovações e relatórios
-├── testes/           # testes de aceitação e qualidade
+├── tests/           # testes de aceitação e qualidade
 ├── runtime/          # arquitetura futura; não ativada nesta fase
 ├── AGENTS.md
 └── README.md
