@@ -1,5 +1,5 @@
-# Protocolo de handoff
+# Documento legado — Protocolo de Handoff
 
-Toda transferência entre departamentos deve conter: ID da tarefa; projeto; objetivo; contexto; entradas autorizadas; escopo e exclusões; restrições; responsável; entregável; critérios de aceitação; prazo; dependências; status; evidência e localização do resultado.
+A versão vigente está em [protocolos/delegacao-e-handoff.md](../protocolos/delegacao-e-handoff.md) e [protocolos/README.md](../protocolos/README.md).
 
-O destinatário confirma entendimento ou aponta ambiguidades antes de executar. Entrega sem evidência retorna para complementação. Silêncio não significa aceite. Não enviar conteúdo externamente sem autorização.
+Este arquivo é mantido por compatibilidade histórica. Em caso de divergência, prevalecem os protocolos em português na pasta protocolos/.
